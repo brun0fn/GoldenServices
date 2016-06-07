@@ -1,8 +1,17 @@
 package br.uva.goldenservices.ui;
 
 import android.view.Menu;
+<<<<<<< HEAD
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import br.uva.goldenservices.R;
+import golden.services.http.ConnectorWebService;
+import golden.services.model.anuncios.ListaAnuncios;
+=======
+
+import br.uva.goldenservices.R;
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
 
 /**
  * Created by caio on 30/05/16.
@@ -16,7 +25,11 @@ public class MenuHelper {
                 break;
             case R.layout.criarservico:
             case R.layout.listatrabalhoefetuado:
+<<<<<<< HEAD
+            case R.layout.listar_servicos:
+=======
             case R.layout.listatrabalhosservico:
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
             case R.layout.telainiciallogado:
                 defaultMenu(id, menu);
                 break;
@@ -42,7 +55,13 @@ public class MenuHelper {
                 break;
             case R.layout.criarservico:
             case R.layout.listatrabalhoefetuado:
+<<<<<<< HEAD
+            case R.layout.listar_servicos:
+                ret = defaultMenuOps(op);
+                break;
+=======
             case R.layout.listatrabalhosservico:
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
             case R.layout.telainiciallogado:
                 ret = defaultMenuOps(op);
                 break;
@@ -58,7 +77,11 @@ public class MenuHelper {
 
         if(op == 1) {
              //todo
+<<<<<<< HEAD
+            Helper.changeView(R.layout.listar_servicos);
+=======
             Helper.changeView(R.layout.listatrabalhosservico);
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
             ret = true;
         } else if (op == 2) {
             //todo

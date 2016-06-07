@@ -5,6 +5,10 @@ import android.widget.RadioButton;
 
 import br.uva.goldenservices.R;
 import golden.services.http.ConnectorWebService;
+<<<<<<< HEAD
+import golden.services.model.anuncios.Anuncio;
+=======
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
 import golden.services.model.usuarios.Usuario;
 
 /**
@@ -17,6 +21,29 @@ public class FormSubmit {
         MASCULINO
     }
 
+<<<<<<< HEAD
+    public static enum Tipo {
+        PAGO,
+        GRATIS
+    }
+
+    public static void sendCriarServico(Activity mainActivity){
+        String[] strings = Helper.getStringValues(false, R.id.editarea, R.id.editDescricao, R.id.editRegiao, R.id.editPreco);
+
+        String area = strings[0];
+        String descricao = strings[1];
+        String regiao = strings[2];
+        String preco = strings[3];
+        String tipo = ((RadioButton) mainActivity.findViewById(R.id.radioGratuito)).isSelected() ? Tipo.GRATIS.toString() : Tipo.PAGO.toString();
+
+        Anuncio anuncio = ConnectorWebService.criarAnuncio(area,descricao,preco,regiao,tipo);
+
+        Helper.alert("Anuncio criado com sucesso!");
+        Helper.changeView(R.layout.listar_servicos);
+    }
+
+=======
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
     public static void sendCadastroUsuario(Activity mainActivity) {
 
         String[] strings = Helper.getStringValues(false, R.id.editNome, R.id.EditTelefone, R.id.editEndereco,

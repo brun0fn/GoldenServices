@@ -1,9 +1,25 @@
 package br.uva.goldenservices.ui;
 
+<<<<<<< HEAD
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.uva.goldenservices.MainActivity;
+import br.uva.goldenservices.R;
+import br.uva.goldenservices.ui.adapters.AnuncioAdapter;
+import golden.services.http.ConnectorWebService;
+import golden.services.model.anuncios.Anuncio;
+import golden.services.model.anuncios.ListaAnuncios;
+=======
 import android.widget.TextView;
 
 import br.uva.goldenservices.R;
 import golden.services.http.ConnectorWebService;
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
 import golden.services.model.usuarios.Usuario;
 
 /**
@@ -19,6 +35,25 @@ public class ViewLoader {
             } else if (id == R.layout.telainiciallogado) {
                 TextView label = (TextView) Helper.getActivity().findViewById(R.id.telaInicialLogadoUsuarioConectado);
                 label.setText(usuarioLogado.getEmail() + " " + usuarioLogado.getNome());
+<<<<<<< HEAD
+            }else if(id == R.layout.listar_servicos){
+                AnuncioAdapter m_adapter;
+                ListaAnuncios listaAnuncio = ConnectorWebService.listarAnuncio();
+                List<Anuncio> m_parts =  listaAnuncio.getListaAnuncios();
+                m_adapter = new AnuncioAdapter(Helper.getActivity(),R.layout.listar_servicos, m_parts);
+
+
+                ListView lista  = (ListView) Helper.getActivity().findViewById(R.id.listAnuncio);
+                TextView teste = (TextView) Helper.getActivity().findViewById(R.id.Teste);
+
+
+                //if(listaAnuncio != null && listaAnuncio.getListaAnuncios() != null) {
+                    lista.setAdapter(new AnuncioAdapter(Helper.getActivity(), android.R.layout.simple_list_item_1, m_parts));
+                    teste.setText(m_parts.get(16).getAreaDeAtuacao());
+                //}
+
+=======
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
             }
         }
     }

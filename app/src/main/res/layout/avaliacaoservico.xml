@@ -77,7 +77,11 @@
         android:textSize="15dp" />
 
     <EditText
+<<<<<<< HEAD
+        android:id="@+id/editRegiao"
+=======
         android:id="@+id/editText1"
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -96,10 +100,16 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:text="Enviar"
+        android:layout_below="@+id/editRegiao"
+        android:layout_centerHorizontal="true" />
+=======
         android:layout_alignRight="@+id/usuario_pestador_servico"
         android:layout_below="@+id/editText1"
         android:layout_toRightOf="@+id/datamodify"
         android:text="Enviar" />
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
 
     <TextView
         android:id="@+id/tipo_servico"

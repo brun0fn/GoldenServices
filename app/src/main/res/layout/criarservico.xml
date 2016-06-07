@@ -26,7 +26,11 @@
                  android:layout_height="wrap_content"
                  android:layout_alignParentTop="true"
                  android:layout_centerHorizontal="true"
+<<<<<<< HEAD
+                 android:text="Criar Serviço"
+=======
                  android:text="Criar Usuário"
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
                  android:textAppearance="?android:attr/textAppearanceMedium"
                  android:textSize="25dp" />
 
@@ -98,7 +102,11 @@
         android:lines="3" />
 
     <Button
+<<<<<<< HEAD
+        android:id="@+id/buttonCriarAnuncio"
+=======
         android:id="@+id/buttoncriar"
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/CriarUsuario"
@@ -108,7 +116,11 @@
         android:textSize="25dp" />
 
     <EditText
+<<<<<<< HEAD
+        android:id="@+id/editRegiao"
+=======
         android:id="@+id/editText1"
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -119,12 +131,20 @@
         android:hint="Região de Atendimento" />
 
     <EditText
+<<<<<<< HEAD
+        android:id="@+id/editPreco"
+=======
         android:id="@+id/Preco"
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+<<<<<<< HEAD
+        android:layout_below="@+id/editRegiao"
+=======
         android:layout_below="@+id/editText1"
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
         android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="Preço" />

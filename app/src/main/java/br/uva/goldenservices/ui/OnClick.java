@@ -57,6 +57,17 @@ public class OnClick {
             }
         });
 
+<<<<<<< HEAD
+        callbacks.put(R.id.buttonCriarAnuncio, new OnClickCallback() {
+            @Override
+            public void onClick() {
+                Activity activity = Helper.getActivity();
+                FormSubmit.sendCriarServico(activity);
+            }
+        });
+
+=======
+>>>>>>> 52e49972223a1b96d18198858c06431768999d8c
         callbacks.put(R.id.formLoginBtnCadastrar, new OnClickCallback() {
             @Override
             public void onClick() {
